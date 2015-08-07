@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--Customisation Options-->
+ 
+<meta name="color:Background" content="#cccccc" />
+<meta name="color:Primary Colour" content="#03999b" />
+<meta name="color:Secondary Colour" content="#4cc3c5" />
+ 
+<meta name="font:Body" content="Georgia" />
+ 
+<meta name="image:Background" content="http://i41.tinypic.com/wvztsk.png" />
+<meta name="image:Sidebar" content="" />
+ 
+<meta name="if:Infinite Scroll" content="0">
+ 
+<!--Things that go in the tab-->
+ 
+<title>{Title}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<link rel="shortcut icon" href="{Favicon}" />
+ 
+<!--Custom font-->
+ 
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+ 
+ 
+ 
+<style type="text/css">
+ 
+/*The Background*/
+ 
+body {
+        background-color: {color:Background};
+        font-family: {font:Body};
+        background-image: url({image:Background});
+        background-attachment: fixed;
+        margin: 0;
+        word-wrap: break-word;
+}
+ 
+/*The Sidebar*/
+ 
+#sidebar {
+        background-color: rgba(0,0,0,.7);
+        width: 260px;  
+        position: fixed;
+        top: 0px;
+        left: 100px;
+}
+ 
+/*The Sidebar: Title*/
+ 
+#sidebar .title {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+}
+ 
+#sidebar .title a {
+        color: white;
+        text-decoration: none;
+}
+ 
+#sidebar .title a:hover {
+        color: #F9FF55;
+}
+ 
+/*The Sidebar: Image*/
+ 
+#sidebar .image {
+        width: 260px;
+        height: auto;
+}
+ 
+/*The Sidebar: Description*/
+ 
+#sidebar .description {
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        padding:10px;
+        line-height:100%;
+}
+ 
+#sidebar .description a {
+        color: {color:Primary Colour};
+        text-decoration: none;
+}
+ 
+#sidebar .description a:hover {
+        color: {color:Secondary Colour};
+}
+ 
+/*The Sidebar: Links*/
+ 
+#sidebar .links {
+        background-color: #002BFF;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding: 3px 5px;
+        margin: 2px;
+        float: left;
+        width: 247px;
+}
+   
+#sidebar .links a {
+        text-decoration:none;
+}
+ 
+#sidebar .links:hover {
+        background-color: #FFF700;
+}
+ 
+/*The Sidebar: Pagination*/
+ 
+#sidebar .pagination {
+    width: 260px;
+    text-align: center;
+    padding: 3px 0;
+}
+ 
+#sidebar .pagination a {
+    color: {color:Primary Colour};
+    text-decoration: none;
+}
+ 
+#sidebar .pagination a:hover {
+    color: {color:Secondary Colour};
+}
+ 
+ 
+/***************************/
+ 
+/*The Main Content*/
+       
+#content {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 0 60px 220px;
+    padding: 20px 0;
+    color: black;
+    position: absolute;
+    right: 150px;
+}
+ 
+#content a {
+    color: {color:Primary Colour};
+    text-decoration: none;
+}
+ 
+#content a:hover {
+    color: {color:Secondary Colour};
+}
+ 
+#content blockquote {
+    border-left: solid 2px black;
+    margin: 0;
+    padding-left: 10px;
+}
+ 
+img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+#content #posts {
+    background-color: rgba(255,255,255,0.5);
+    width: 500px;
+    margin: 0 auto 20px;
+    padding:10px;
+}
+ 
+#content #posts .title {
+    font-size: 22px;
+}
+ 
+#content #posts .text {
+    font-size:11px;
+}
+ 
+/***************************/
+ 
+/*The Permalink and Tags)*/
+ 
+#content #posts #permalink {
+    font-size:14px;
+    margin-top:10px;
+}
+ 
+#content #posts #tags {
+    font-size:12px;
+}
+ 
+#content #posts #tags .comma:last-child {
+    display: none;
+}
+ 
+/*Note Container*/
+ 
+#content #notecontainer {
+    margin: 20px auto;
+    width: 500px;
+    font-size: 11px;
+}
+ 
+#content #notecontainer ol.notes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+#content #notecontainer img.avatar {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+.jump_page {
+padding: 4px 8px;
+border: 2px solid #702D58;
+background-color: #684C89;
+color: {PrimaryColor};
+font-family:century gothic;
+font-size:11px;
+text-decoration:none;
+}
+
+.current_page, .jump_page:hover {
+padding: 4px 8px;
+border: 2px solid #702D58;
+background-color: #684C89;
+color: {PrimaryColor};
+font-family:century gothic;
+font-size:11px;
+text-decoration:none;
+}
+/*links to other sites*/
+.Twitter {
+    position: fixed;
+    left: 100px;
+    width: 65px;
+    height: 65px;
+    top: 546px;
+}
+.Twitter:hover {
+    position: fixed;
+    left: 82px;
+    width: 100px;
+    height: 100px;
+    top: 528px;
+}
+.reddit {
+    position: fixed;
+    left: 165px;
+    width: 65px;
+    height: 65px;
+    top: 540px;
+}
+.reddit:hover {
+    position: fixed;
+    left: 147px;
+    width: 100px;
+    height: 100px;
+    top: 522px;
+}
+.YouTube {
+    position: fixed;
+    left: 230px;
+    width: 65px;
+    height: 65px;
+    top: 546px;
+}
+.YouTube:hover {
+    position: fixed;
+    left: 212px;
+    width: 100px;
+    height: 100px;
+    top: 528px;
+}
+.askfm {
+    position: fixed;
+    left: 295px;
+    width: 65px;
+    height: 65px;
+    top: 536px;
+}
+.askfm:hover {
+    position: fixed;
+    left: 277px;
+    width: 100px;
+    height: 100px;
+    top: 518px;
+}
+/*Formatting for small screens*/
+@media(max-width: 1100px){
+#sidebar {
+        background-color: rgba(0,0,0,.7);
+        width: 260px;  
+        position: absolute;
+        top: 0px;
+        left: 50px;
+}
+#content {
+    width: 560px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 100 60px 260px;
+    padding: 20px 0;
+    color: black;
+    position: absolute;
+    right: 0px;
+}
+.Twitter {
+    position: absolute;
+    left: 50px;
+    width: 65px;
+    height: 65px;
+    top: 520px;
+}
+.reddit {
+    position: absolute;
+    left: 105px;
+    width: 65px;
+    height: 65px;
+    top: 520px;
+}
+.YouTube {
+    position: absolute;
+    left: 180px;
+    width: 65px;
+    height: 65px;
+    top: 520px;
+}
+.askfm {
+    position: absolute;
+    left: 245px;
+    width: 65px;
+    height: 65px;
+    top: 520px;
+}
+
+
+/*Custom CSS*/
+ 
+{CustomCSS}    
+ 
+</style>
+ 
+<!--Infinite Scroll-->
+ 
+{block:IfInfiniteScroll}
+<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
+{/block:IfInfiniteScroll}
+ 
+</head>
+<body>
+ 
+<!--The Sidebar-->
+ 
+<div id="sidebar">
+<div class="title"><a href="/"><strong>{Title}</strong></a></div>
+<img class="image" src="{image:Sidebar}" />
+<div class="description">{Description}</div>
+ 
+{block:AskEnabled}<a href="/ask"><div class="links">{AskLabel}</div></a>{/block:AskEnabled}
+{block:SubmissionsEnabled}<a href="/submit"><div class="links">{SubmitLabel}</div></a>{/block:SubmissionsEnabled}
+{block:HasPages}{block:Pages}<a href="{url}"><div class="links">{Label}</div></a>{/block:Pages}{/block:HasPages}
+ 
+<!--Pagination-->
+ 
+</div> <!--sidebar-->
+
+<!--links to other places-->
+<div class="Twitter">
+    <a href="https://twitter.com/RailCanyon11235"><img src="http://i.imgur.com/E06ofTl.png"/></a>
+</div>
+
+<div class="reddit">
+    <a href="https://www.reddit.com/user/pylorian/"><img src="http://i.imgur.com/oPv9maD.png"/></a>
+</div>
+
+<div class="YouTube">
+    <a href="https://www.youtube.com/user/ThePylorian"><img src="http://i.imgur.com/ToEEvdR.png"/></a>
+</div>
+
+<div class="askfm">
+    <a href="http://ask.fm/pylorian"><img src="http://i.imgur.com/sd8RRUH.png"/></a>
+</div>
+ 
+<!--------------------------->
+ 
+<!--The Main Content-->
+ 
+<div id="content">
+<div class="autopagerize_page_element">
+{block:Posts}
+<div id="posts">
+ 
+{block:Photo}
+{LinkOpenTag}<img src="{PhotoURL-500}" />{LinkCloseTag}
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Photo}
+ 
+{block:Photoset}
+{Photoset-500}
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Photoset}
+ 
+{block:Video}
+{Video-500}
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Video}
+ 
+{block:Audio}
+{AudioPlayerBlack}
+<div class="text">~ {PlayCountWithLabel}</div>
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Audio}
+ 
+{block:Quote}
+<div class="title">“{Quote}”</div>
+{block:Source}<div class="text"><br>~ {Source}</div>{/block:Source}
+{/block:Quote}
+ 
+{block:Text}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<div class="text">{Body}</div>
+{/block:Text}
+ 
+{block:Answer}
+<div class="title">{Question}</div>
+<div class="text">~ {Asker}</div>
+<div class="text">{Answer}</div>
+{block:Answer}
+ 
+{block:Chat}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<div class="text">
+{block:Lines}
+{block:Label}<strong>{Label}</strong>{/block:Label} {Line}<br />
+{/block:Lines}
+</div> <!--text-->
+{/block:Chat}
+ 
+{block:Link}
+<div class="title"><a href="{URL}">{Name}</a></div>
+{block:Description}
+<div class="text">{Description}</div>
+{/block:Description}
+{/block:Link}
+
+ 
+<!--------------------------->
+ 
+<!--The Permalink-->
+ 
+<div id="permalink">
+<a href="{Permalink}">
+{block:Date}{Month} {DayOfMonth}, {Year} at {12Hour}:{Minutes}:{Seconds}{Capitalampm}{/block:Date}
+{block:NoteCount} with {NoteCountWithLabel}{/block:NoteCount}
+</a>
+</div> <!--permalink-->
+ 
+<!--The Tags-->
+ 
+{block:HasTags}<div id="tags">
+{block:Tags}<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}.
+</div> <!--tags-->
+{/block:HasTags}
+
+{block:PostNotes}
+<div id="notecontainer">{PostNotes}</div>
+{/block:PostNotes} 
+</div> <!--posts-->
+ 
+<!--Note Container-->
+ 
+ 
+{/block:Posts}
+
+{block:Pagination}
+{block:PreviousPage}<a href="{PreviousPage}" class="jump_page">&laquo;</a>{/block:PreviousPage}
+{block:JumpPagination length="3"}
+{block:CurrentPage}<span class="current_page">{PageNumber}</span>{/block:CurrentPage}
+{block:JumpPage}<a class="jump_page" href="{URL}">{PageNumber}</a>{/block:JumpPage}{/block:JumpPagination}
+{block:NextPage}<a href="{NextPage}" class="jump_page">&raquo;</a>{/block:NextPage}
+{/block:Pagination}
+</div> <!--autopagerize_page_element-->
+</div> <!--content-->
+ 
+</body>
+</html>
