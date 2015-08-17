@@ -179,11 +179,11 @@ img {
 }
  
 #content #posts .title {
-    font-size: 22px;
+    font-size: 24px;
 }
  
 #content #posts .text {
-    font-size:11px;
+    font-size:14px;
 }
  
 /***************************/
