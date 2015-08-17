@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>for those who want to see specific things</title>
+    <link rel="shortcut icon" href="http://i.imgur.com/wxTNAqg.png}" />
+    <style>
+        body{
+            background-image: url('http://i.imgur.com/qfvqxwR.png');
+            background-attachment: fixed;
+        }
+        #classic{
+            color: #663399;
+            font-size: 50px;
+            position: fixed;
+            top: -20px;
+        }
+        #legend{
+            color: #78078D;
+            font-size: 50px;
+            position: fixed;
+            right: 0px;
+            top: -20px;
+        }
+        #game{
+            color: #FDD347;
+            font-size: 50px;
+            text-align: center;
+        }
+        .orig{
+            position: fixed;
+            left: 20px;
+        }
+        .leg{
+            position: fixed;
+            float: right;
+            right: 30px;
+        }
+        .game{
+            position: fixed;
+            top: 10%;
+            left: 42%;
+        }
+        .fuckingwork{
+            position: fixed;
+            float: right;
+            right: 32px;
+            top: 315px;
+        }
+        .monkey{
+            position: fixed;
+            float: right;
+            right: 32px;
+            top: 210px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="classic">Classic Era</h1>
+    <h1 id="game">By Game</h1>
+    <h1 id="legend">Legend of Spyro</h1>
+    <table class="orig">
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/classic-Spyro"><img src="http://i.imgur.com/vns2Wpv.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/ripto"><img src="http://i.imgur.com/IKb0Wmm.png"</a></td>
+        </tr>
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/hunter-the-cheetah"><img src="http://i.imgur.com/nQ1J6op.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/elora"><img src="http://i.imgur.com/5GMXml1.png"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/red-the-dragon"><img src="http://i.imgur.com/1Nu1U8Y.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/other-classics"><img src="http://i.imgur.com/ow9yupg.png"/></a>
+        </tr>
+    </table>
+    <table class="leg">
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/LoS-Spyro"><img src="http://i.imgur.com/96AiYFE.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/sparx"><img src="http://i.imgur.com/K4RqTrQ.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/cynder"><img src="http://i.imgur.com/GjdluDb.png"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/malefor"><img src="http://i.imgur.com/uy9dcJ6.png"/></a></td>
+        </tr>
+    </table>
+    <div class="monkey"><a href="http://awkwardspyrophotos.tumblr.com/tagged/enemies"><img src="http://i.imgur.com/JyVNRSG.png"/></a></div>
+    <div class="fuckingwork"><a href="http://awkwardspyrophotos.tumblr.com/tagged/guardian"><img src="http://i.imgur.com/0JiO794.png"/></a></div>
+    <table class="game">
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/spyro-1"><img src="http://i.imgur.com/IZBYBAP.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/spyro-2"><img src="http://i.imgur.com/LS4fNkW.png"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/spyro-3"><img src="http://i.imgur.com/0u9VJTL.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/enter-the-dragonfly"><img src="http://i.imgur.com/WjOHLx9.png"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/a-hero%27s-tail"><img src="http://i.imgur.com/TiBP3bb.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/a-new-beginning"><img src="http://i.imgur.com/Jig2cRJ.png"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/The-Eternal-Night"><img src="http://i.imgur.com/laXhH2x.png"/></a></td>
+            <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/dawn-of-the-dragon"><img src="http://i.imgur.com/EaXJXtj.png"/></a></td>
+        </tr>
+    </table>
+</body>
+</html>
