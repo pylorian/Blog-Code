@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Learn All About the Pylorian</title>
+    <link rel="shortcut icon" href="http://i.imgur.com/TqpZozC.png"/>
+    <style>
+        body{
+            background-image: url('http://i.imgur.com/yR8GDft.jpg');
+        }
+        .basics{
+            width: 30%;
+            color: black;
+            background-color: rgba(255,255,255,0.5);
+            margin: 10px;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            top: 0%;
+        }
+        .content{
+            width: 30%;
+            background-color: rgba(255,255,255,0.5);
+            margin: 10px;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            top: 38%;
+        }
+        .interests{
+            width: 20%;
+            background-color: rgba(255,255,255,0.5);
+            margin: 10px;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            left: 31%;
+        }
+        .irl{
+            width: 50%;
+            background-color: rgba(255,255,255,0.5);
+            margin: 10px;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            top: 470px;
+            left: 0.5%;
+        }
+        .person{
+            width: 20%;
+            background-color: rgba(255,255,255,0.5);
+            margin: 10px;
+            padding: 1px;
+            text-align: center;
+            position: fixed;
+            top: 225px;
+            left: 31%;
+        }
+        .image{
+            position: fixed;
+            left: 53%;
+        }
+        #text{
+            background-color: rgba(255,255,255,0.5);
+            text-align: center;
+        }
+        .other{
+            position: fixed;
+            left: 53%;
+            top: 45%;
+            color: white;
+        }
+        .ask{
+            position: fixed;
+            left: 53%;
+            top: 55%;
+        }
+        .ask:hover{
+            background-image: url("http://i.imgur.com/avpK1hP.png");
+        }
+    </style>
+</head>    
+
+<body>
+    <div class="basics">
+        <h3>The Basics</h3>
+        <p>I go by the name Pylorian all across the internet.<br></br>
+            My actual name is Andrew<br></br>
+            I am an 18 year old male(born September 4th, 1996)<br></br>
+            I am very gay, I like dick.<br></br>
+            I live in San Antonio, Texas
+        </p>
+    </div>
+    <div class="content">
+        <h3>What you can expect</h3>
+        <p>The main points are above, I’m an 18 year old gay guy. What you see          on this blog is going to reflect my interests, anything that pops into          my head, and well, whatever I feel like. Nsfw content may show up(Also          worth noting, I’m a very horny guy so talk of masturbation and all my           weird fetishes is bound to happen every so often.) but that’ll be tagged         if you don’t wanna see it.(or if you want to see only the nsfw things           , that’s cool too.)</p> 
+    </div>
+    <div class="interests">
+        <h3>Primary Interests</h3>
+        <p>
+            Sonic the Hedgehog games<br></br>
+            Pokemon games and cards<br></br>
+            Spyro games, with a preference for The Legend of Spyro<br></br>
+            Mathematics
+        </p>
+    </div>
+    <div class="irl">
+        <h3>me_irl</h3>
+        <p>
+            Let’s talk about my life off the internet. I am about to begin my               second year attending the University of Texas at San Antonio                    studying math, it’s quite enjoyable. I spend my non-internet time               playing video games, taking long walks in the afternoon, masturbatin             g or sleeping.
+        </p>
+    </div>
+    <div class="person">
+        <h3>uhhh</h3>
+        <p>
+            So, I should probably put a bit about how I act and my personality              and such, huh? Problem is, I’m awful at accurately doing that. Just             strike up conversation and you’ll get to know me soon enough. I                 accept all messages, anon or not, so go ahead and pop in sometime.
+        <p>
+    </div>
+    <div class="image">
+        <img src="http://i.imgur.com/cFxglO0.jpg"/>
+        <p id="text">A picture of me</p>
+    </div>
+    <h1 class="other">Other Places you can Find Me</h1>
+    <div class="ask">
+        <a href="http://ask.fm/pylorian"><img src="http://i.imgur.com/8HnkBbn.png"/></a>
+    </div>
+</body>
+</html>
