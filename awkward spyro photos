@@ -22,10 +22,7 @@
 <link rel="shortcut icon" href="{Favicon}" />
  
 <!--Custom font-->
- 
-<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
- 
- 
+<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:700' rel='stylesheet' type='text/css'>
  
 <style type="text/css">
  
@@ -53,10 +50,11 @@ body {
 /*The Sidebar: Title*/
  
 #sidebar .title {
-        font-family: 'Great Vibes', cursive;
+        font-family: 
         font-size: 20px;
         text-align: center;
         padding: 10px;
+        font-family: 'Cinzel Decorative', cursive;
 }
  
 #sidebar .title a {
@@ -250,11 +248,9 @@ text-decoration:none;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 100%;
-    /*background-color: rgba(0,128,0,.5);*/
-    background: -webkit-radial-gradient(#3BED65,#008E20);
-    background: -moz-radial-gradient(#3BED65,#008E20);
+    background-color: rgba(0,128,0,.5);
     position: relative;
-    bottom: 10px;
+    bottom: 13px;
 }
 #likes .like{
     list-style: none;
@@ -265,11 +261,9 @@ text-decoration:none;
     padding-bottom: 6px;
     padding-top: 11px;
     border-radius: 100%;
-    /*background-color: rgba(255,0,0,.5);*/
-    background: -webkit-radial-gradient(#AD2220,#D93B38);
-    background: -moz-radial-gradient(#AD2220,#D93B38);
+    background-color: rgba(255,0,0,.5);
     position: relative;
-    bottom: 11px;
+    bottom: 14px;
     left: 5px;
 }
 /*Formatting for small screens*/
