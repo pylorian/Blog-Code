@@ -26,8 +26,6 @@
  
 <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
  
- 
- 
 <style type="text/css">
  
 /*The Background*/
@@ -223,23 +221,23 @@ img {
     height: 16px;
 }
 .jump_page {
-padding: 4px 8px;
-border: 2px solid #702D58;
-background-color: #684C89;
-color: {PrimaryColor};
-font-family:century gothic;
-font-size:11px;
-text-decoration:none;
+    padding: 4px 8px;
+    border: 2px solid #702D58;
+    background-color: #684C89;
+    color: {PrimaryColor};
+    font-family:century gothic;
+    font-size:11px;
+    text-decoration:none;
 }
 
 .current_page, .jump_page:hover {
-padding: 4px 8px;
-border: 2px solid #702D58;
-background-color: #684C89;
-color: {PrimaryColor};
-font-family:century gothic;
-font-size:11px;
-text-decoration:none;
+    padding: 4px 8px;
+    border: 2px solid #702D58;
+    background-color: #684C89;
+    color: {PrimaryColor};
+    font-family:century gothic;
+    font-size:11px;
+    text-decoration:none;
 }
 /*links to other sites*/
 .Twitter {
@@ -385,13 +383,16 @@ text-decoration:none;
 {block:IfInfiniteScroll}
 <script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
 {/block:IfInfiniteScroll}
- 
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> 
 </head>
 <body>
 <!--The Sidebar-->
  
 <div id="sidebar">
-<div class="title"><a href="/"><strong>{Title}</strong></a></div>
+<div class="title"><a href="/"><span title="SUCK MY DICK!!"><strong>{Title}</strong></span></a></div>
 <img class="image" src="{image:Sidebar}" />
 <div class="description">{Description}</div>
  
