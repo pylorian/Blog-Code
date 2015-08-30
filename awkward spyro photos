@@ -63,7 +63,7 @@ body {
 }
  
 #sidebar .title a:hover {
-        color: violet;
+        color: darkviolet;
 }
  
 /*The Sidebar: Image*/
@@ -146,7 +146,7 @@ body {
 }
  
 #content a {
-    color: {color:Primary Colour};
+    color: navy;
     text-decoration: none;
 }
  
@@ -180,7 +180,7 @@ img {
 }
  
 #content #posts .text {
-    font-size:11px;
+    font-size:12px;
 }
  
 /*END OF MAIN CONTENT*/
@@ -188,7 +188,7 @@ img {
 /*The Permalink and Tags*/
  
 #content #posts #permalink {
-    font-size:11px;
+    font-size:12px;
     margin-top:10px;
 }
  
