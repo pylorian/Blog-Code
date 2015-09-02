@@ -1,0 +1,116 @@
+<head>
+<title>Find me in these other places</title>
+<link rel="shortcut icon" href="http://i.imgur.com/Zq7OOhA.jpg" />
+  <style>
+  body{
+      background-image: url("http://i.imgur.com/2dQUiM9.png");
+      background-color: 161A90;
+  }
+  .top:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .reddit{
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      right: 55%;
+  }
+  .reddit:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .askfm{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      right: 40%;
+  }
+  .askfm:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .Twitter{
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      right: 50%;
+  }
+  .Twitter:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .YouTube{
+      position: absolute;
+      top: 40%;
+      left: 35%;
+  }
+  .YouTube:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .gplus{
+      position: absolute;
+      top: 38%;
+      right: 38%;
+  }
+  .gplus:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .Skype{
+      position: absolute;
+      top: 55%;
+      left: 40%;
+  }
+  .Skype:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .Kik{
+      position: absolute;
+      top: 55%;
+      right: 43%;
+  }
+  .Kik:hover{
+      transform: scale(1.5, 1.5);
+  }
+  .back{
+      text-align: center;
+      font-size: 30px;
+      height: 70px;
+      width:150px;
+      position: absolute;
+      background-image: url("http://i.imgur.com/f8DzMR4.png");
+      top: 5%;
+      left: 5%;
+  }
+  .back a{
+      text-decoration: none;
+      color: yellow;
+  }
+  .back a:visited{
+      color: yellow;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="reddit">
+    <a href="https://www.reddit.com/user/pylorian/"><img src="http://i.imgur.com/1JewCjH.png" /></a>
+  </div>
+  <div class="askfm">
+      <a href="http://ask.fm/pylorian"><img src="http://i.imgur.com/7hAiTE1.png"/></a>
+  </div>
+  <div class="Twitter">
+      <a href="https://twitter.com/RailCanyon11235"><img src="http://i.imgur.com/MRgAxqn.png"/></a>
+  </div>
+  <div class="YouTube">
+      <a href="https://www.youtube.com/user/ThePylorian"><img src="http://i.imgur.com/a6gj9an.png"/></a>
+  </div>
+  <div class="gplus">
+      <a href="https://plus.google.com/u/0/104919141374305299163/posts"><img src="http://i.imgur.com/tFYCPJz.png"/></a>
+  </div>
+  <div class="Skype">
+      <span title="search for: thepylorian"><img src="http://i.imgur.com/hJVgI2P.png"/></span>
+  </div>
+  <div class="Kik">
+      <span title="search for pylorian"><img src="http://i.imgur.com/f3heYwQ.png"/></span>
+  </div>
+  <div class="back">
+      <a href="http://thepylorian.tumblr.com">Back to the blog</a>
+  </div>
+</body>
