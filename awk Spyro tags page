@@ -52,6 +52,25 @@
             top: 210px;
             height: 100px;
         }
+        .back{
+              text-align: center;
+              font-size: 30px;
+              color: yellow;
+              height: 70px;
+              width:150px;
+              background-image: url("http://i.imgur.com/mmnA3Nf.jpg");
+              position: absolute;
+              bottom: 5%;
+              left: 45%;
+              right: 25%;
+        }
+        .back a{
+            text-decoration: none;
+            color: yellow;
+        }
+        .back a:visited{
+            color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +91,7 @@
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/flame"><span title="Flame the Dragon"><img src="http://i.imgur.com/F4SgxFq.jpg"/></span></a></td>
         </tr>
 		<tr>
-			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/ember"><span title="Ember the dragon"><img src="http://i.imgur.com/4n1sllO.png"/></span></a></td>
+			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/ember"><span title="Ember the Dragon"><img src="http://i.imgur.com/4n1sllO.png"/></span></a></td>
 			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/other-classics"><span title="Other Classic Characters"><img src="http://i.imgur.com/ow9yupg.png"/></span></a></td>
     </table>
     <table class="leg">
@@ -105,5 +124,8 @@
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/dawn-of-the-dragon"><span title="The Legend of Spyro Dawn of the Dragon"><img src="http://i.imgur.com/EaXJXtj.png"/></span></a></td>
         </tr>
     </table>
+    <div class="back">
+      <a href="http://awkwardspyrophotos.tumblr.com">Back to the blog</a>
+  </div>
 </body>
 </html>
