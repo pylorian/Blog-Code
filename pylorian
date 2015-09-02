@@ -44,7 +44,7 @@ body {
 #sidebar {
         background-color: rgba(0,0,0,.7);
         width: 260px;  
-        position: fixed;
+        position: absolute;
         top: 0px;
         left: 100px;
 }
@@ -239,63 +239,7 @@ img {
     font-size:11px;
     text-decoration:none;
 }
-/*links to other sites*/
-.Twitter {
-    position: fixed;
-    left: 100px;
-    width: 65px;
-    height: 65px;
-    top: 546px;
-}
-.Twitter:hover {
-    position: fixed;
-    left: 82px;
-    width: 100px;
-    height: 100px;
-    top: 528px;
-}
-.reddit {
-    position: fixed;
-    left: 165px;
-    width: 65px;
-    height: 65px;
-    top: 540px;
-}
-.reddit:hover {
-    position: fixed;
-    left: 147px;
-    width: 100px;
-    height: 100px;
-    top: 522px;
-}
-.YouTube {
-    position: fixed;
-    left: 230px;
-    width: 65px;
-    height: 65px;
-    top: 546px;
-}
-.YouTube:hover {
-    position: fixed;
-    left: 212px;
-    width: 100px;
-    height: 100px;
-    top: 528px;
-}
-.askfm {
-    position: fixed;
-    left: 295px;
-    width: 65px;
-    height: 65px;
-    top: 536px;
-}
-.askfm:hover {
-    position: fixed;
-    left: 277px;
-    width: 100px;
-    height: 100px;
-    top: 518px;
-}
+
 /*Like and Reblog buttons*/
 #likes .reblog{
     list-style: none;
@@ -324,6 +268,7 @@ img {
     bottom: 16px;
     left: 5px;
 }
+
 /*Formatting for small screens*/
 @media(max-width: 1100px){
 #sidebar {
@@ -342,35 +287,7 @@ img {
     position: absolute;
     right: 0px;
 }
-.Twitter {
-    position: absolute;
-    left: 50px;
-    width: 65px;
-    height: 65px;
-    top: 520px;
 }
-.reddit {
-    position: absolute;
-    left: 105px;
-    width: 65px;
-    height: 65px;
-    top: 520px;
-}
-.YouTube {
-    position: absolute;
-    left: 180px;
-    width: 65px;
-    height: 65px;
-    top: 520px;
-}
-.askfm {
-    position: absolute;
-    left: 245px;
-    width: 65px;
-    height: 65px;
-    top: 520px;
-}
-
 
 /*Custom CSS*/
  
@@ -401,25 +318,9 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 {block:HasPages}{block:Pages}<a href="{url}"><div class="links">{Label}</div></a>{/block:Pages}{/block:HasPages}
  
 <!--Pagination-->
- 
+
 </div> <!--sidebar-->
 
-<!--links to other places-->
-<div class="Twitter">
-    <a href="https://twitter.com/RailCanyon11235"><img src="http://i.imgur.com/E06ofTl.png"/></a>
-</div>
-
-<div class="reddit">
-    <a href="https://www.reddit.com/user/pylorian/"><img src="http://i.imgur.com/oPv9maD.png"/></a>
-</div>
-
-<div class="YouTube">
-    <a href="https://www.youtube.com/user/ThePylorian"><img src="http://i.imgur.com/ToEEvdR.png"/></a>
-</div>
-
-<div class="askfm">
-    <a href="http://ask.fm/pylorian"><img src="http://i.imgur.com/sd8RRUH.png"/></a>
-</div>
  
 <!--------------------------->
  
