@@ -272,11 +272,11 @@ img {
 /*Formatting for small screens*/
 @media(max-width: 1100px){
 #sidebar {
-        background-color: rgba(0,0,0,.7);
-        width: 260px;  
-        position: absolute;
-        top: 0px;
-        left: 50px;
+    background-color: rgba(0,0,0,.7);
+    width: 260px;  
+    position: absolute;
+    top: 0px;
+    left: 50px;
 }
 #content {
     width: 560px;
@@ -287,6 +287,53 @@ img {
     position: absolute;
     right: 0px;
 }
+}
+/*likes*/
+#likecontainer{
+    max-width: 260px;
+    position: absolute;
+    left: 60px;
+    top: 590px;
+    margin-right: auto;
+    margin-left: auto;
+}
+a#likescontainer:visited{
+    color: blue;
+}
+li.like_post{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: auto;
+    width: 260px;
+    padding-left: -60px;
+    /*border-radius: 5%;
+    border-width: 5px;*/
+}
+#hnng{
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 550px;
+}
+#hng{
+    position: absolute;
+    left: 100px;
+}
+#hng:visited{
+    color: blue;
+}
+li.like_post img {
+    max-width: 100%;
+}
+li.like_post .like_link a {
+    font-weight: bold;
+}
+li.like_post .like_title {
+    font-weight: bold;
+}
+li.like_post .post_info_bottom {
+    margin: 0 0 20px 0;
+    display: block !important;
 }
 
 /*Custom CSS*/
@@ -321,8 +368,18 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 
 </div> <!--sidebar-->
 
- 
-<!--------------------------->
+
+<!--likes-->
+<h2 id="hnng">These things are cool</h2>
+<div id="likecontainer">
+    {block:Likes}
+        <div id="likes_container">
+            {Likes limit="10" summarize="250" width="260"}
+        </div>
+        <a href="http://www.tumblr.com/liked/by/{Name}" id="hng">See more stuff I like</a>
+    {/block:Likes}
+</div>
+<!--likes-->
  
 <!--The Main Content-->
  
