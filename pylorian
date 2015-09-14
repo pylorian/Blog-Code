@@ -374,7 +374,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <div id="likecontainer">
     {block:Likes}
         <div id="likes_container">
-            {Likes limit="10" summarize="250" width="260"}
+            {Likes limit="5" summarize="250" width="260"}
         </div>
         <a href="http://www.tumblr.com/liked/by/{Name}" id="hng">See more stuff I like</a>
     {/block:Likes}
@@ -462,6 +462,9 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 {block:Tags}<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}.
 </div> <!--tags-->
 {/block:HasTags}
+
+<!--post increment buttons-->
+
 
 {block:PostNotes}
 <div id="notecontainer">{PostNotes}</div>
