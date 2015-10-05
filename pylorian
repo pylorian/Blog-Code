@@ -14,8 +14,6 @@
 <meta name="image:Background" content="http://i.imgur.com/VLppoI8.png" />
 <meta name="image:Sidebar" content="" />
  
-<meta name="if:Infinite Scroll" content="0">
- 
 <!--Things that go in the tab-->
  
 <title>{Title}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
@@ -113,25 +111,6 @@ body {
 #sidebar .links:hover {
         background-color: #FFF700;
 }
- 
-/*The Sidebar: Pagination*/
- 
-#sidebar .pagination {
-    width: 260px;
-    text-align: center;
-    padding: 3px 0;
-}
- 
-#sidebar .pagination a {
-    color: {color:Primary Colour};
-    text-decoration: none;
-}
- 
-#sidebar .pagination a:hover {
-    color: {color:Secondary Colour};
-}
- 
- 
 /***************************/
  
 /*The Main Content*/
@@ -288,52 +267,38 @@ img {
     right: 0px;
 }
 }
-/*likes*/
-#likecontainer{
-    max-width: 260px;
+.penis{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#pages{
+    list-style-type: none;
+    display: inline-block;
+}
+.next{
+    width: 85px;
+    height: 20px;
+    background-color: #002BFF;
     position: absolute;
-    left: 60px;
-    top: 590px;
-    margin-right: auto;
-    margin-left: auto;
+    right: 90px;
+    padding: 5px;
 }
-a#likescontainer:visited{
-    color: blue;
+.previous{
+    width: 90px;
+    height: 20px;
+    background-color: #002BFF;
+    position: absolute;
+    right: 510px;
+    padding: 5px;
 }
-li.like_post{
-    list-style: none;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin: auto;
-    width: 260px;
-    padding-left: -60px;
-    /*border-radius: 5%;
-    border-width: 5px;*/
-}
-#hnng{
+#colour{
     color: white;
-    position: absolute;
-    left: 100px;
-    top: 550px;
 }
-#hng{
-    position: absolute;
-    left: 100px;
+.next:hover{
+    background-color: #FFF700;
 }
-#hng:visited{
-    color: blue;
-}
-li.like_post img {
-    max-width: 100%;
-}
-li.like_post .like_link a {
-    font-weight: bold;
-}
-li.like_post .like_title {
-    font-weight: bold;
-}
-li.like_post .post_info_bottom {
-    margin: 0 0 20px 0;
-    display: block !important;
+.previous:hover{
+    background-color: #FFF700;
 }
 
 /*Custom CSS*/
@@ -341,12 +306,6 @@ li.like_post .post_info_bottom {
 {CustomCSS}    
  
 </style>
- 
-<!--Infinite Scroll-->
- 
-{block:IfInfiniteScroll}
-<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
-{/block:IfInfiniteScroll}
 
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -367,19 +326,6 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <!--Pagination-->
 
 </div> <!--sidebar-->
-
-
-<!--likes-->
-<h2 id="hnng">These things are cool</h2>
-<div id="likecontainer">
-    {block:Likes}
-        <div id="likes_container">
-            {Likes limit="5" summarize="250" width="260"}
-        </div>
-        <a href="http://www.tumblr.com/liked/by/{Name}" id="hng">See more stuff I like</a>
-    {/block:Likes}
-</div>
-<!--likes-->
  
 <!--The Main Content-->
  
@@ -387,7 +333,11 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <div class="autopagerize_page_element">
 {block:Posts}
 <div id="posts">
- 
+
+{block:RebloggedFrom}
+<div class="penis">reblogged from: <a href="{ReblogParentURL}" title="{ReblogParentTitle}">{ReblogParentName}</a></div>
+{/block:RebloggedFrom}
+
 {block:Photo}
 {LinkOpenTag}<img src="{PhotoURL-500}" />{LinkCloseTag}
 {block:Caption}<div class="text">{Caption}</div>{/block:Caption}
@@ -440,7 +390,6 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <div class="text">{Description}</div>
 {/block:Description}
 {/block:Link}
-
  
 <!--------------------------->
 <ul id="likes">
@@ -459,7 +408,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <!--The Tags-->
  
 {block:HasTags}<div id="tags">
-{block:Tags}<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}.
+{block:Tags}<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}
 </div> <!--tags-->
 {/block:HasTags}
 
@@ -475,11 +424,14 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 {/block:Posts}
 
 {block:Pagination}
-{block:PreviousPage}<a href="{PreviousPage}" class="jump_page">&laquo;</a>{/block:PreviousPage}
-{block:JumpPagination length="3"}
-{block:CurrentPage}<span class="current_page">{PageNumber}</span>{/block:CurrentPage}
-{block:JumpPage}<a class="jump_page" href="{URL}">{PageNumber}</a>{/block:JumpPage}{/block:JumpPagination}
-{block:NextPage}<a href="{NextPage}" class="jump_page">&raquo;</a>{/block:NextPage}
+    <ul id="pages">
+	<li>{block:NextPage}
+        <div class="next"><a href="{NextPage}"><span id="colour">Older Posts</span></a></div>
+    {/block:NextPage}</li>
+    <li>{block:PreviousPage}
+        <div class="previous"><a href="{PreviousPage}"><span id="colour">Newer Posts</span></a></div>
+    {/block:PreviousPage}</li>
+    </ul>
 {/block:Pagination}
 </div> <!--autopagerize_page_element-->
 </div> <!--content-->
