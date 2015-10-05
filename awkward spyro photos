@@ -113,24 +113,6 @@ body {
         background-color: #702D58;
 }
  
-/*The Sidebar: Pagination*/
- 
-#sidebar .pagination {
-    width: 260px;
-    text-align: center;
-    padding: 3px 0;
-}
- 
-#sidebar .pagination a {
-    color: {color:Primary Colour};
-    text-decoration: none;
-}
- 
-#sidebar .pagination a:hover {
-    color: {color:Secondary Colour};
-}
- 
- 
 /*END OF SIDEBAR*/
  
 /*The Main Content*/
@@ -286,6 +268,35 @@ text-decoration:none;
 }
  
 }
+#pages{
+    list-style-type: none;
+    display: inline-block;
+}
+.next{
+    width: 85px;
+    height: 20px;
+    background-color: #684C89;
+    position: absolute;
+    right: 90px;
+    padding: 5px;
+}
+.previous{
+    width: 90px;
+    height: 20px;
+    background-color: #684C89;
+    position: absolute;
+    right: 510px;
+    padding: 5px;
+}
+#colour{
+    color: white;
+}
+.next:hover{
+    background-color: #702D58;
+}
+.previous:hover{
+    background-color: #702D58;
+}
  
 /*Custom CSS*/
  
@@ -395,7 +406,7 @@ text-decoration:none;
 <!--The Tags)-->
  
 {block:HasTags}<div id="tags">
-{block:Tags}<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}.
+{block:Tags}<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}
 </div> <!--tags-->
 {/block:HasTags}
 
@@ -409,11 +420,14 @@ text-decoration:none;
 {/block:Posts}
 
 {block:Pagination}
-{block:PreviousPage}<a href="{PreviousPage}" class="jump_page">&laquo;</a>{/block:PreviousPage}
-{block:JumpPagination length="3"}
-{block:CurrentPage}<span class="current_page">{PageNumber}</span>{/block:CurrentPage}
-{block:JumpPage}<a class="jump_page" href="{URL}">{PageNumber}</a>{/block:JumpPage}{/block:JumpPagination}
-{block:NextPage}<a href="{NextPage}" class="jump_page">&raquo;</a>{/block:NextPage}
+    <ul id="pages">
+	<li>{block:NextPage}
+        <div class="next"><a href="{NextPage}"><span id="colour">Older Posts</span></a></div>
+    {/block:NextPage}</li>
+    <li>{block:PreviousPage}
+        <div class="previous"><a href="{PreviousPage}"><span id="colour">Newer Posts</span></a></div>
+    {/block:PreviousPage}</li>
+    </ul>
 {/block:Pagination}
 </div> <!--autopagerize_page_element-->
 </div> <!--content-->
