@@ -275,7 +275,7 @@ text-decoration:none;
     height: 20px;
     background-color: #684C89;
     position: absolute;
-    right: 90px;
+    right: 20px;
     padding: 5px;
 }
 .previous{
@@ -283,7 +283,7 @@ text-decoration:none;
     height: 20px;
     background-color: #684C89;
     position: absolute;
-    right: 510px;
+    right: 440px;
     padding: 5px;
 }
 #colour{
