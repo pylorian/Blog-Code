@@ -13,8 +13,6 @@
 <meta name="image:Background" content="http://i41.tinypic.com/wvztsk.png" />
 <meta name="image:Sidebar" content="" />
  
-<meta name="if:Infinite Scroll" content="0">
- 
 <!--Things that go in the tab-->
  
 <title>{Title}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
@@ -303,12 +301,6 @@ text-decoration:none;
 {CustomCSS}    
  
 </style>
- 
-<!--Infinite Scroll-->
- 
-{block:IfInfiniteScroll}
-<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
-{/block:IfInfiniteScroll}
  
 </head>
 <body>
