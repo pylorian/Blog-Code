@@ -30,7 +30,7 @@ body {
         background-color: {color:Background};
         font-family: {font:Body};
         background-image: url({image:Background});
-        background-attachment: fixed;
+        background-attachment: scroll;
         margin: 0;
         word-wrap: break-word;
 }
@@ -40,7 +40,7 @@ body {
 #sidebar {
         background-color: rgba(0,0,0,.7);
         width: 260px;  
-        position: fixed;
+        position: absolute;
         top: 0px;
         left: 100px;
 }
@@ -326,6 +326,10 @@ text-decoration:none;
 <div class="autopagerize_page_element">
 {block:Posts}
 <div id="posts">
+
+{block:RebloggedFrom}
+<div class="penis">reblogged from: <a href="{ReblogParentURL}" title="{ReblogParentTitle}">{ReblogParentName}</a>, originally posted by: <a href="{ReblogRootURL}" title="{ReblogRootTitle}">{ReblogRootName}</a></div>
+{/block:RebloggedFrom}
  
 {block:Photo}
 {LinkOpenTag}<img src="{PhotoURL-500}" />{LinkCloseTag}
