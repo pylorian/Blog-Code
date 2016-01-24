@@ -335,7 +335,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <div id="posts">
 
 {block:RebloggedFrom}
-<div class="penis">reblogged from: <a href="{ReblogParentURL}" title="{ReblogParentTitle}">{ReblogParentName}</a></div>
+<div class="penis">reblogged from: <a href="{ReblogParentURL}" title="{ReblogParentTitle}">{ReblogParentName}</a>, originally posted by: <a href="{ReblogRootURL}" title="{ReblogRootTitle}">{ReblogRootName}</a></div>
 {/block:RebloggedFrom}
 
 {block:Photo}
