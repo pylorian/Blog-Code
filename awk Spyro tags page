@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="http://i.imgur.com/wxTNAqg.png}" />
     <style>
         body{
-            background-image: url('http://i.imgur.com/qfvqxwR.png');
+            background-image: url('http://i.imgur.com/wriWQa6.png');
             background-attachment: fixed;
         }
         #classic{
@@ -36,7 +36,7 @@
         }
         .game{
             position: fixed;
-            top: 10%;
+            top: 7%;
             left: 42%;
         }
         .fuckingwork{
@@ -61,7 +61,7 @@
               background-image: url("http://i.imgur.com/mmnA3Nf.jpg");
               position: absolute;
               bottom: 5%;
-              left: 45%;
+              left: 75%;
               right: 25%;
         }
         .back a{
@@ -95,6 +95,7 @@
 			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/sheila"><span title="Sheila the Kangaroo"><img src="http://i.imgur.com/5NfEzjQ.png"/></span></a></td>
 		</tr>
 		<tr>
+		    <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/bianca"><span title="bianca the rabbit"><img src="http://i.imgur.com/9TGcsAn.png"/></span></a></td>
 			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/other-classics"><span title="Other Classic Characters"><img src="http://i.imgur.com/ow9yupg.png"/></span></a></td>
 		</tr>	
     </table>
@@ -119,6 +120,10 @@
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/spyro-3"><span title="Spyro 3"><img src="http://i.imgur.com/0u9VJTL.png"/></span></a></td>
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/enter-the-dragonfly"><span title="Enter the Dragonfly"><img src="http://i.imgur.com/WjOHLx9.png"/></span></a></td>
         </tr>
+		<tr>
+			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/season-of-ice"><span title="Season of Ice"><img src="http://i.imgur.com/BVxxNVK.png"/></span></a></td>
+			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/season-of-flame"></span title="Season of Flame"><img src="http://i.imgur.com/2FEPdJw.png"/></span></a></td>
+		</tr>
         <tr>
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/a-hero%27s-tail"><span title="A Hero's Tail"><img src="http://i.imgur.com/TiBP3bb.png"/></span></a></td>
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/a-new-beginning"><span title="The Legend of Spyro a New Beginning"><img src="http://i.imgur.com/Jig2cRJ.png"/></span></a></td>
@@ -127,6 +132,9 @@
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/The-Eternal-Night"><span title="The Legend of Spyro the Eternal Night"><img src="http://i.imgur.com/laXhH2x.png"/></span></a></td>
             <td><a href="http://awkwardspyrophotos.tumblr.com/tagged/dawn-of-the-dragon"><span title="The Legend of Spyro Dawn of the Dragon"><img src="http://i.imgur.com/EaXJXtj.png"/></span></a></td>
         </tr>
+		<tr>
+			<td><a href="http://awkwardspyrophotos.tumblr.com/tagged/spyro-fusion"><span title="that one crossover game"><img src="http://i.imgur.com/ypgaiXJ.png"/></span></a></td>
+		</tr>
     </table>
     <div class="back">
       <a href="http://awkwardspyrophotos.tumblr.com">Back to the blog</a>
