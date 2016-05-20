@@ -1,2 +1,2 @@
 # Blog Code
-This is the code used for thepylorian.tumblr.com and awkwardspyrophotos.tumblr.com as of 10/4/15
+This is the code used for all my blogs as of 5/20/2016.
